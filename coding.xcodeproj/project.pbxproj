@@ -32,15 +32,31 @@
 		C2F6C1272D7C306100A34CF8 /* test2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test2; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		C2F6C1162D7C274100A34CF8 /* coding */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = coding;
-			sourceTree = "<group>";
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C2F6C1352D7C315200A34CF8 /* Exceptions for "New Folder" folder in "coding" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				test2/main.cpp,
+			);
+			target = C2F6C1132D7C274100A34CF8 /* coding */;
 		};
-		C2F6C1282D7C306100A34CF8 /* test2 */ = {
+		C2F6C1362D7C315200A34CF8 /* Exceptions for "New Folder" folder in "test2" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				test2/main.cpp,
+			);
+			target = C2F6C1262D7C306100A34CF8 /* test2 */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C2F6C12E2D7C314E00A34CF8 /* New Folder */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = test2;
+			exceptions = (
+				C2F6C1352D7C315200A34CF8 /* Exceptions for "New Folder" folder in "coding" target */,
+				C2F6C1362D7C315200A34CF8 /* Exceptions for "New Folder" folder in "test2" target */,
+			);
+			path = "New Folder";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -66,8 +82,7 @@
 		C2F6C10B2D7C274100A34CF8 = {
 			isa = PBXGroup;
 			children = (
-				C2F6C1162D7C274100A34CF8 /* coding */,
-				C2F6C1282D7C306100A34CF8 /* test2 */,
+				C2F6C12E2D7C314E00A34CF8 /* New Folder */,
 				C2F6C1152D7C274100A34CF8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,7 +112,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				C2F6C1162D7C274100A34CF8 /* coding */,
+				C2F6C12E2D7C314E00A34CF8 /* New Folder */,
 			);
 			name = coding;
 			packageProductDependencies = (
@@ -117,9 +132,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				C2F6C1282D7C306100A34CF8 /* test2 */,
 			);
 			name = test2;
 			packageProductDependencies = (
